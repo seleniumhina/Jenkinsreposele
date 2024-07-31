@@ -3,20 +3,19 @@
   <groupId>Jenkinsrepo</groupId>
   <artifactId>Jenkinsrepo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
   <dependencies>
-  <dependency>
+    <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>4.23.0</version>
     </dependency>
-    <!-- TestNG dependency -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.10.2</version>
       <scope>test</scope>
     </dependency>
-    <!-- SLF4J dependency -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
@@ -27,7 +26,6 @@
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
-      <!-- Maven Compiler Plugin -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
@@ -36,8 +34,6 @@
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
-
-      <!-- Maven Surefire Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -48,7 +44,6 @@
           </suiteXmlFiles>
           <includes>
             <include>**/*classrepo.java</include>
-            include>
           </includes>
           <encoding>UTF-8</encoding>
         </configuration>
@@ -61,7 +56,6 @@
       <id>Regression</id>
       <build>
         <plugins>
-          <!-- Maven Surefire Plugin for Regression profile -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
@@ -80,5 +74,4 @@
       </build>
     </profile>
   </profiles>
-  
 </project>

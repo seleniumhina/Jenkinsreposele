@@ -71,7 +71,7 @@
                 <suiteXmlFile>testng.xml</suiteXmlFile>
               </suiteXmlFiles>
               <includes>
-                <include>**/*TestTESTNG.java</include>
+                <include>**/*classrepo.java</include>
               </includes>
               <encoding>UTF-8</encoding>
             </configuration>

@@ -36,7 +36,7 @@ public class classrepo {
 	  Thread.sleep(2000);
 	  driver.findElement(By.xpath("/html/body/div[1]/div/div/main/div/div/div/div/div[1]/div[1]/div/div[2]/div/div/div/table/tbody/tr[1]/td[6]/div/button/span[1]")).click();
 	  Thread.sleep(2000);
-	  driver.findElement(By.name("primaryContactName")).sendKeys("sendKeys");
+	  driver.findElement(By.name("primaryContactName")).sendKeys("sendKeys1");
 	  driver.findElement(By.id("simple-tab-1")).click();
  }
  
